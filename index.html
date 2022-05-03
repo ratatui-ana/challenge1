@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Challenge I - Decodificador</title>
+        <link rel="shortcut icon" type="imagex/png" href="icon.ico">
+        <link rel="stylesheet" href="reset.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="tema">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+        </div>
+        <header>
+            <div>
+                <img src="alura.png" id="alura">
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">Sobre o ONE</a></li>
+                        <li><a href="https://github.com/ratatui-ana" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/ana-cristina-silva-lopes/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <p style="font-size: 18px;">Codifique ou Decifre mensagens!</p>
+            <div id="diventrada">
+                <textarea type="text" required id="entrada" placeholder="Digite seu texto" cols="6" rows="15"></textarea>
+            </div>
+            <div id="divsaida">
+                <textarea type="text" readonly id="saida" placeholder="Área de visualização" cols="4" rows="15"></textarea>
+                <button onclick="copiar()" id="copy"></button>
+            </div>
+        <p class="frase">&#x24D8; Apenas letras sem acento</p>
+            <div id="botoes">
+                <button onclick="criptografar()" class="botao" id="crip">Codificar</button>
+                <button onclick="descriptografar()" class="botao" id="dec">Decifrar</button>
+            </div>
+        </main>
+        <footer>
+            <p>Feito com muito carinho por uma estudante apaixonada por aprender e grata pela oportunidade da Alura e Oracle</p>
+        </footer>
+        <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
